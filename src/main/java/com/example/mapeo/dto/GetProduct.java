@@ -5,16 +5,20 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
 public class GetProduct {
-    private Long id;
+    private Long productId;
 
-    private String name;
+    private String productName;
 
     private String createdAt;
 
-    private GetCategory category;
+    private GetCategory productCategory;
+
+    private String price;
 }
